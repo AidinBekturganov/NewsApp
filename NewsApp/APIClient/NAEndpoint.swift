@@ -10,9 +10,7 @@ import Foundation
 
 /// Represents unique API endpoint
 @frozen enum NAEndpoint: String {
-    /// Endpoint to get article info
-    case article
-    /// Endpoint to get favorites info
-    case favorites
+    /// Endpoint to get crypto articles
+    case news
 }
 

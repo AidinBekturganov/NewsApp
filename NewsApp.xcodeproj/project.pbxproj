@@ -19,6 +19,7 @@
 		6DD723062BBD1D89008B0F98 /* NAService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD723052BBD1D89008B0F98 /* NAService.swift */; };
 		6DD723082BBD1D95008B0F98 /* NARequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD723072BBD1D95008B0F98 /* NARequest.swift */; };
 		6DD7230A2BBD1E15008B0F98 /* NAEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD723092BBD1E15008B0F98 /* NAEndpoint.swift */; };
+		6DD7230C2BBD2419008B0F98 /* NASentimentStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD7230B2BBD2419008B0F98 /* NASentimentStats.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		6DD723052BBD1D89008B0F98 /* NAService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAService.swift; sourceTree = "<group>"; };
 		6DD723072BBD1D95008B0F98 /* NARequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NARequest.swift; sourceTree = "<group>"; };
 		6DD723092BBD1E15008B0F98 /* NAEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAEndpoint.swift; sourceTree = "<group>"; };
+		6DD7230B2BBD2419008B0F98 /* NASentimentStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASentimentStats.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				6DB46F3C2BBD14320040797E /* NAArticle.swift */,
+				6DD7230B2BBD2419008B0F98 /* NASentimentStats.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				6DB46F292BBD10990040797E /* NewsApp.xcdatamodeld in Sources */,
 				6DB46F212BBD10990040797E /* SceneDelegate.swift in Sources */,
 				6DB46F3D2BBD14320040797E /* NAArticle.swift in Sources */,
+				6DD7230C2BBD2419008B0F98 /* NASentimentStats.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
