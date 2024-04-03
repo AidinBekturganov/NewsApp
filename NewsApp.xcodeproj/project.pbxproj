@@ -16,6 +16,9 @@
 		6DB46F3D2BBD14320040797E /* NAArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB46F3C2BBD14320040797E /* NAArticle.swift */; };
 		6DB46F3F2BBD14900040797E /* NAArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB46F3E2BBD14900040797E /* NAArticleViewController.swift */; };
 		6DB46F412BBD154A0040797E /* NAFavoriteArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB46F402BBD154A0040797E /* NAFavoriteArticlesViewController.swift */; };
+		6DD723062BBD1D89008B0F98 /* NAService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD723052BBD1D89008B0F98 /* NAService.swift */; };
+		6DD723082BBD1D95008B0F98 /* NARequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD723072BBD1D95008B0F98 /* NARequest.swift */; };
+		6DD7230A2BBD1E15008B0F98 /* NAEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD723092BBD1E15008B0F98 /* NAEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		6DB46F3C2BBD14320040797E /* NAArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAArticle.swift; sourceTree = "<group>"; };
 		6DB46F3E2BBD14900040797E /* NAArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAArticleViewController.swift; sourceTree = "<group>"; };
 		6DB46F402BBD154A0040797E /* NAFavoriteArticlesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAFavoriteArticlesViewController.swift; sourceTree = "<group>"; };
+		6DD723052BBD1D89008B0F98 /* NAService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAService.swift; sourceTree = "<group>"; };
+		6DD723072BBD1D95008B0F98 /* NARequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NARequest.swift; sourceTree = "<group>"; };
+		6DD723092BBD1E15008B0F98 /* NAEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,9 @@
 		6DB46F372BBD121C0040797E /* APIClient */ = {
 			isa = PBXGroup;
 			children = (
+				6DD723052BBD1D89008B0F98 /* NAService.swift */,
+				6DD723072BBD1D95008B0F98 /* NARequest.swift */,
+				6DD723092BBD1E15008B0F98 /* NAEndpoint.swift */,
 			);
 			path = APIClient;
 			sourceTree = "<group>";
@@ -204,7 +213,10 @@
 			files = (
 				6DB46F3F2BBD14900040797E /* NAArticleViewController.swift in Sources */,
 				6DB46F232BBD10990040797E /* NATabBarController.swift in Sources */,
+				6DD723062BBD1D89008B0F98 /* NAService.swift in Sources */,
 				6DB46F412BBD154A0040797E /* NAFavoriteArticlesViewController.swift in Sources */,
+				6DD723082BBD1D95008B0F98 /* NARequest.swift in Sources */,
+				6DD7230A2BBD1E15008B0F98 /* NAEndpoint.swift in Sources */,
 				6DB46F1F2BBD10990040797E /* AppDelegate.swift in Sources */,
 				6DB46F292BBD10990040797E /* NewsApp.xcdatamodeld in Sources */,
 				6DB46F212BBD10990040797E /* SceneDelegate.swift in Sources */,

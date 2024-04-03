@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// Controller to show Favorites
 final class NAFavoriteArticlesViewController: UIViewController {
 
     override func viewDidLoad() {

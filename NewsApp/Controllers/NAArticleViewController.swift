@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// Controller to show Articles
 final class NAArticleViewController: UIViewController {
 
     override func viewDidLoad() {
