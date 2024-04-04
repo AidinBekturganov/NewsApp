@@ -9,7 +9,7 @@ import UIKit
 
 /// Controller for tabs and root tab controllers
 final class NATabBarController: UITabBarController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .red
@@ -18,7 +18,7 @@ final class NATabBarController: UITabBarController {
     
     private func setUpTabs() {
         let articleVC = NAArticleViewController()
-        let favoriteArticlesVC = NAFavoriteArticlesViewController()
+        let favoriteArticlesVC = NAFavouriteArticlesViewController()
         
         articleVC.navigationItem.largeTitleDisplayMode = .automatic
         favoriteArticlesVC.navigationItem.largeTitleDisplayMode = .automatic

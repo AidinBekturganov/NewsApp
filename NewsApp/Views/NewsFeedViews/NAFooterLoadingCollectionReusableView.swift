@@ -17,7 +17,6 @@ final class NAFooterLoadingCollectionReusableView: UICollectionReusableView {
         return spinner
     }()
     
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubview(spinner)

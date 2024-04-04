@@ -15,13 +15,14 @@ class NAArticleCollectionViewCell: UICollectionViewCell {
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.image = UIImage(named: "NoImage")
         return imageView
     }()
 
     private let nameLabel: UILabel = {
         let label = UILabel()
         label.textColor = .secondaryLabel
-        label.font = .systemFont(ofSize: 16, weight: .regular)
+        label.font = .systemFont(ofSize: 12, weight: .regular)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -29,7 +30,7 @@ class NAArticleCollectionViewCell: UICollectionViewCell {
     private let dateLabel: UILabel = {
         let label = UILabel()
         label.textColor = .secondaryLabel
-        label.font = .systemFont(ofSize: 16, weight: .regular)
+        label.font = .systemFont(ofSize: 12, weight: .regular)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -37,7 +38,7 @@ class NAArticleCollectionViewCell: UICollectionViewCell {
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.textColor = .label
-        label.font = .systemFont(ofSize: 18, weight: .medium)
+        label.font = .systemFont(ofSize: 16, weight: .medium)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -96,26 +97,16 @@ class NAArticleCollectionViewCell: UICollectionViewCell {
 
     override func prepareForReuse() {
         super.prepareForReuse()
-        imageView.image = nil
+        imageView.image = UIImage(named: "NoImage")
         nameLabel.text = nil
         titleLabel.text = nil
+        dateLabel.text = nil
     }
 
     public func configure(with viewModel: NAArticleCollectionViewCellViewModel) {
         nameLabel.text = viewModel.authorName
         titleLabel.text = viewModel.titleOfArticle
         dateLabel.text = viewModel.releaseDate
-        viewModel.fetchImage { [weak self] result in
-            switch result {
-            case .success(let data):
-                DispatchQueue.main.async {
-                    let image = UIImage(data: data)
-                    self?.imageView.image = image
-                }
-            case .failure(let error):
-                print(String(describing: error))
-                break
-            }
-        }
+        imageView.sd_setImage(with: viewModel.articleImageUrl, placeholderImage: UIImage(named: "NoImage"))
     }
 }

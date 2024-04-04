@@ -1,0 +1,15 @@
+{
+  "originHash" : "412893ba8088a206834b1c07bc95f37d661db8e26a4c3b7ebc8d87df38ab5acc",
+  "pins" : [
+    {
+      "identity" : "sdwebimage?tab=readme-ov-file",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImage?tab=readme-ov-file",
+      "state" : {
+        "revision" : "f6afa0132961d593f07970d84e2d8b588c29ea04",
+        "version" : "5.19.1"
+      }
+    }
+  ],
+  "version" : 3
+}

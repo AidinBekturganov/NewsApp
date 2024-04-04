@@ -10,7 +10,6 @@ import UIKit
 /// Controller to show Articles
 final class NAArticleViewController: UIViewController, NAArticleListViewDelegate {
   
-
     private let articleListView = NAArticleListView()
  
     override func viewDidLoad() {

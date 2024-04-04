@@ -88,10 +88,10 @@ final class NARequest {
 
 extension NARequest {
     static let listArticlesRequests = NARequest(
-            endpoint: .news,
-            queryParameters: [
-                URLQueryItem(name: "apiKey", value: "pub_41291bc59ac22bcbbc8b25cbe52bbea98e2e8"),
-                URLQueryItem(name: "category", value: "science"),
-                URLQueryItem(name: "language", value: "en,ru")
-            ])
+        endpoint: .news,
+        queryParameters: [
+            URLQueryItem(name: "apiKey", value: "pub_41291bc59ac22bcbbc8b25cbe52bbea98e2e8"),
+            URLQueryItem(name: "category", value: "science"),
+            URLQueryItem(name: "language", value: "en,ru")
+        ])
 }

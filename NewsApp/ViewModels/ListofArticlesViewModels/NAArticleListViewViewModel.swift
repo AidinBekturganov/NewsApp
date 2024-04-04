@@ -36,8 +36,6 @@ final class NAArticleListViewViewModel : NSObject {
                     cellViewModels.append(viewModel)
                 }
             }
-            
-            print(cellViewModels.count)
         }
     }
     
@@ -107,8 +105,6 @@ final class NAArticleListViewViewModel : NSObject {
 
 extension NAArticleListViewViewModel : UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print(cellViewModels.count)
-        
         return cellViewModels.count
     }
     
