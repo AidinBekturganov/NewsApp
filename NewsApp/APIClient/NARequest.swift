@@ -20,7 +20,7 @@ final class NARequest {
     private let endpoint: NAEndpoint
     
     /// Path components for API, if any
-    private let pathComponents: Set<String>
+    private let pathComponents: [String]
     
     /// Query components for API, if any
     private let queryParameters: [URLQueryItem]
@@ -59,16 +59,39 @@ final class NARequest {
     
     //MARK: - Public
     
+    /// Desired http method
+    public let httpMethod = "GET"
+    
     /// Construct reqeust
     /// - Parameters:
     ///   - endpoint: Target endpoint
     ///   - pathComponents: Collection of Path components
     ///   - queryParameters: Collection of query parameters
     public init(endpoint: NAEndpoint,
-                pathComponents: Set<String> = [],
+                pathComponents: [String] = [],
                 queryParameters: [URLQueryItem] = []) {
         self.endpoint = endpoint
         self.pathComponents = pathComponents
         self.queryParameters = queryParameters
     }
+    
+    convenience init?(nextPageItem: String) {
+        self.init(endpoint: .news,
+                  queryParameters: [
+                    URLQueryItem(name: "apiKey", value: "pub_41291bc59ac22bcbbc8b25cbe52bbea98e2e8"),
+                    URLQueryItem(name: "category", value: "science"),
+                    URLQueryItem(name: "language", value: "en,ru"),
+                    URLQueryItem(name: "page", value: nextPageItem)
+                  ])
+    }
+}
+
+extension NARequest {
+    static let listArticlesRequests = NARequest(
+            endpoint: .news,
+            queryParameters: [
+                URLQueryItem(name: "apiKey", value: "pub_41291bc59ac22bcbbc8b25cbe52bbea98e2e8"),
+                URLQueryItem(name: "category", value: "science"),
+                URLQueryItem(name: "language", value: "en,ru")
+            ])
 }

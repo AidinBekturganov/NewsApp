@@ -11,19 +11,19 @@ import Foundation
 struct NAArticle: Codable {
     let articleID, title: String
     let link: String
-    let keywords: [String]
-    let creator, videoURL: String
-    let description, content, pubDate: String
-    let imageURL: String
-    let sourceID: String
-    let sourceURL: String
-    let sourceIcon: String
+    let keywords, creator: [String]?
+    let videoURL: String?
+    let description, content, pubDate: String?
+    let imageURL: String?
+    let sourceID: String?
+    let sourceURL: String?
+    let sourceIcon: String?
     let sourcePriority: Int
     let country, category: [String]
     let language: String
-    let aiTag, aiRegion: [String]
+    let aiTag, aiRegion: String
     let sentiment: String
-    let sentimentStats: NASentimentStats
+    let sentimentStats: String
 
     enum CodingKeys: String, CodingKey {
         case articleID = "article_id"
